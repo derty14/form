@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>
+      <button id="btn">click</button>
+      <div class="modal" id="modal">
+        <div class="modalarea" id="modalarea">
+          <span class="close" id="close">&times</span>
+          <h4>Напишите нам и мы ответим в течение часа</h4>
+          <form id="form" method="post" action="dav.php">
+            <input type="text" class="form-control" name="name" id="name" required placeholder="Имя">
+            <input type="text" class="form-control" name="tel" id="tel" required placeholder="Телефон" >
+            <textarea class="form-control" name="message" id="message" required placeholder="Сообщение"></textarea>
+            </br>
+            <input id="politics" autocomplete="off" required="" type="checkbox" value=""> Я даю согласие на обработку персональных данных. </input>
+            </br>
+            </br>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+          <div id="form-messages" class="mt-3"></div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
